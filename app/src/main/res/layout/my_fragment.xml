@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/banner4"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        app:AutoPlayTime="3000"
+        app:clipChildrenLeftRightMargin="10dp"
+        app:clipChildrenTopBottomMargin="3dp"
+        app:isAutoPlay="true"
+        app:isClipChildrenMode="true"
+        app:isHandLoop="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:isShowNumberIndicator="false"
+        app:pageChangeDuration="800"
+        app:pointNormal="@drawable/dot_shape_unselected"
+        app:pointSelect="@drawable/dot_shape_selected"
+        app:pointsContainerBackground="@android:color/transparent"
+        app:pointsPosition="CENTER"
+        app:pointsVisibility="false"
+        app:viewPagerClipChildren="false" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
